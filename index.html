@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AdLift — Be the answer in AI search</title>
+<meta name="description" content="SEO, AEO and GEO under one roof — proven across global brands in the US and India.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Lato:wght@400;700&family=Quicksand:wght@400;500;600;700&family=Sintony:wght@400;700&family=Poppins:wght@400;500;600;700&family=Philosopher:wght@400;700&family=Mulish:wght@400;500;600;700&family=Rethink+Sans:wght@400;500;600;700;800&family=Spectral:wght@400;500;600&family=Instrument+Sans:wght@400;500;600;700&family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="page">
+
+  <!-- Theme & fonts control panel -->
+  <div class="panel-wrap">
+    <button id="panelToggle" class="panel-toggle" type="button">
+      <span class="panel-dot"></span>Theme &amp; fonts <span id="panelArrow">▴</span>
+    </button>
+    <div id="panel" class="panel">
+      <div>
+        <div class="panel-label">COLOUR THEME</div>
+        <div id="themeOpts" class="panel-opts"></div>
+      </div>
+      <div>
+        <div class="panel-label">TYPE PAIRING</div>
+        <div id="fontOpts" class="panel-opts"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#top" class="logo">adlift<span class="dot">.</span></a>
+      <nav class="nav">
+        <div class="nav-mega" id="megaWrap">
+          <button class="nav-link nav-trigger" type="button">Services <span class="caret">▾</span></button>
+          <div id="megaMenu" class="mega" hidden>
+            <div class="mega-grid" id="megaGrid"></div>
+          </div>
+        </div>
+        <a href="#work" class="nav-link">Work</a>
+        <a href="#insights" class="nav-link">Insights</a>
+        <a href="#process" class="nav-link">About</a>
+        <a href="#faq" class="nav-link">Careers</a>
+      </nav>
+      <div class="header-cta">
+        <span class="regions">US · IN</span>
+        <a href="#teardown" class="btn-primary">Book a teardown</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="hero">
+    <div class="hero-glow"></div>
+    <div class="hero-inner">
+      <div class="badge"><span class="badge-new">NEW</span>AI-ERA VISIBILITY</div>
+      <h1 class="hero-title">Be the answer in <span class="accent">AI search.</span></h1>
+      <p class="hero-sub">SEO, AEO and GEO under one roof — proven across global brands in the US and India.</p>
+
+      <div class="chat-card">
+        <div class="chat-head">
+          <div class="chat-head-label"><span class="chat-head-dot"></span>AI assistant preview</div>
+          <span class="chat-demo">demo</span>
+        </div>
+        <div class="chat-q-row"><div id="chatQ" class="chat-q"></div></div>
+        <div class="chat-a-row">
+          <div class="chat-avatar">a</div>
+          <div class="chat-a-body">
+            <div class="chat-a-text"><span id="chatTyped"></span><span id="chatCaret" class="chat-caret">▍</span></div>
+            <div id="chatSources" class="chat-sources" hidden>
+              <span class="chat-sources-label">SOURCES</span>
+              <span class="src src-primary">adlift.com</span>
+              <span class="src src-muted">industry report</span>
+            </div>
+          </div>
+        </div>
+        <div class="chat-input">
+          <div class="chat-input-ph">Ask about your brand's AI visibility…</div>
+          <button id="chatReplay" class="chat-send" type="button" aria-label="Replay">↑</button>
+        </div>
+      </div>
+      <div id="chatChips" class="chips"></div>
+    </div>
+  </section>
+
+  <!-- Trusted by -->
+  <section class="trusted">
+    <div class="trusted-inner">
+      <span class="trusted-label">TRUSTED BY GLOBAL BRANDS</span>
+      <div class="trusted-logos">
+        <div class="logo-ph">logo</div>
+        <div class="logo-ph">logo</div>
+        <div class="logo-ph">logo</div>
+        <div class="logo-ph">logo</div>
+        <div class="logo-ph">logo</div>
+        <div class="logo-ph">logo</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shift / Approach / Proof -->
+  <section class="pillars">
+    <div class="pillars-grid">
+      <div class="pillar pillar-teal">
+        <div class="pillar-kicker ink-teal">THE SHIFT</div>
+        <div class="pillar-title">Search moved into AI answers.</div>
+      </div>
+      <div class="pillar pillar-blue">
+        <div class="pillar-kicker ink-blue">OUR APPROACH</div>
+        <div class="pillar-title">SEO, AEO and GEO run as one plan.</div>
+      </div>
+      <div class="pillar pillar-orange">
+        <div class="pillar-kicker">THE PROOF</div>
+        <div class="pillar-title">Global brands, US and India.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="services">
+    <div class="services-intro">
+      <div class="kicker">WHAT WE DO</div>
+      <h2 class="h2">Three engines.<br>One team.</h2>
+      <p class="lead">Click a service to see what it covers.</p>
+      <a href="#services" class="text-link">All services <span>→</span></a>
+    </div>
+    <div id="svcList" class="svc-list"></div>
+  </section>
+
+  <!-- Process -->
+  <section id="process" class="process">
+    <div class="process-inner">
+      <div class="process-head">
+        <div>
+          <div class="kicker kicker-teal">HOW WE WORK</div>
+          <h2 class="h2 h2-light">From audit to answer in four steps.</h2>
+        </div>
+        <a href="#process" class="process-link">How we work →</a>
+      </div>
+      <div id="stepsGrid" class="steps-grid"></div>
+    </div>
+  </section>
+
+  <!-- Selected work -->
+  <section id="work" class="work">
+    <div class="work-head">
+      <div>
+        <div class="kicker">SELECTED WORK</div>
+        <h2 class="h2">Results that get cited.</h2>
+      </div>
+      <div class="work-nav">
+        <button id="csPrev" class="work-arrow work-arrow-ghost" type="button" aria-label="Previous">←</button>
+        <button id="csNext" class="work-arrow work-arrow-solid" type="button" aria-label="Next">→</button>
+      </div>
+    </div>
+    <div class="work-grid">
+      <div id="csImg" class="work-img">case study image</div>
+      <div>
+        <div id="csTag" class="work-tag">US · SaaS</div>
+        <h3 id="csTitle" class="work-title">Client name · headline result</h3>
+        <p class="work-desc">Summary of the brief, the approach and the measured outcome.</p>
+        <div class="work-metrics">
+          <div class="metric"><div class="metric-num">[ X ]%</div><div class="metric-label">Metric label</div></div>
+          <div class="metric"><div class="metric-num">[ X ]×</div><div class="metric-label">Metric label</div></div>
+        </div>
+        <div class="work-footer">
+          <div id="csDots" class="work-dots"></div>
+          <a href="#work" class="text-link work-read">Read case study →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial -->
+  <section class="testimonial-wrap">
+    <div class="testimonial">
+      <div class="headshot">headshot</div>
+      <div>
+        <div class="quote">“Client testimonial quote goes here, one or two sentences.”</div>
+        <div class="quote-by">Name <span class="quote-role">· Title, Company</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Insights -->
+  <section id="insights" class="insights">
+    <div class="insights-head">
+      <h2 class="h2 h2-sm">Latest insights</h2>
+      <a href="#insights" class="text-link">All insights →</a>
+    </div>
+    <div id="postsGrid" class="posts-grid"></div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="faq">
+    <div class="faq-intro">
+      <div class="kicker">FAQ</div>
+      <h2 class="h2 h2-sm">Questions people ask us</h2>
+    </div>
+    <div id="faqList" class="faq-list"></div>
+  </section>
+
+  <!-- Teardown CTA -->
+  <section id="teardown" class="teardown-wrap">
+    <div class="teardown">
+      <div>
+        <h2 class="h2 h2-light">Let's see what AI says about you.</h2>
+        <p class="teardown-sub">A free teardown of your visibility across Google, answer engines and AI assistants.</p>
+      </div>
+      <div>
+        <form id="teardownForm" class="teardown-form">
+          <input id="domainInput" class="teardown-input" placeholder="yourdomain.com" autocomplete="off">
+          <button type="submit" class="teardown-submit">Book a teardown</button>
+        </form>
+        <div id="teardownNote" class="teardown-note">Free · no commitment</div>
+        <div id="teardownSent" class="teardown-sent" hidden>
+          <div class="teardown-sent-title">Request received.</div>
+          <div class="teardown-sent-body">We'll send the teardown for <b id="sentDomain" class="accent"></b> shortly.</div>
+          <button id="teardownReset" class="teardown-reset" type="button">Check another domain</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">adlift<span class="dot">.</span></div>
+          <p class="footer-tag">Newsletter on AI search, monthly.</p>
+          <form class="footer-sub" onsubmit="return false">
+            <input class="footer-sub-input" placeholder="you@company.com" autocomplete="off">
+            <button class="footer-sub-btn" type="submit">Subscribe</button>
+          </form>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Services</div>
+          <a href="#services">SEO</a><a href="#services">AEO</a><a href="#services">GEO</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Company</div>
+          <a href="#process">About</a><a href="#work">Work</a><a href="#faq">Careers</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Offices</div>
+          <span>United States</span><span>India</span>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© AdLift</span>
+        <span class="footer-legal"><span>Privacy</span><span>Terms</span><span>LinkedIn</span><span>X</span></span>
+      </div>
+    </div>
+  </footer>
+
+</div>
+<script src="app.js"></script>
+</body>
+</html>
